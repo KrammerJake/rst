@@ -1,12 +1,13 @@
-import {Provider, defaultTheme, Button} from '@adobe/react-spectrum';
+import { Provider, defaultTheme, Button } from '@adobe/react-spectrum';
 import React from 'react';
 import './App.css';
 
 const App = () => {
+  console.log('App!');
   return (
-    <div className="App">
+    <div className='App'>
       <Provider theme={defaultTheme}>
-        <Button variant="cta" onPress={() => alert('Hey there!')}>
+        <Button variant='negative'>
           Hello React Spectrum!
         </Button>
       </Provider>
