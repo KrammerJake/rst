@@ -1,0 +1,29 @@
+---
+root: true
+
+parser: babel-eslint
+extends:
+  # http://eslint.org/docs/user-guide/configuring#using-eslintrecommended
+  - eslint:recommended
+  # https://www.npmjs.com/package/eslint-config-airbnb-base
+  - airbnb
+
+plugins:
+  - react
+  - import
+  - async-await
+  - jest
+  - '@typescript-eslint'
+
+env:
+  browser: true
+  es6: true
+  jest: true
+
+#########
+# Rules #
+#########
+rules: 
+  no-unused-vars: error
+  no-console: error
+  quotes: [error, single]

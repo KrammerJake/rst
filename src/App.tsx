@@ -3,11 +3,10 @@ import React from 'react';
 import './App.css';
 
 const App = () => {
-  console.log('App!');
   return (
     <div className='App'>
       <Provider theme={defaultTheme}>
-        <Button variant='negative'>
+        <Button variant="negative">
           Hello React Spectrum!
         </Button>
       </Provider>
